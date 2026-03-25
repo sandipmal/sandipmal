@@ -1,9 +1,138 @@
-<html>
-<p>
-  <a href="https://www.google.com/">
-  <img src="http://allwishes.in/wp-content/uploads/2016/09/Good-Morning-Animated-GIF-Wallpaper-Cup-Plate-Coffee-Heart-By-Smoke.gif" 
-               alt="Bird" 
-               width="115" 
-               height="160" />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Sandipmal</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    header h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .btn-logout {
+      padding: 8px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn-logout:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .welcome-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+      padding: 48px 40px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .welcome-card h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .welcome-card p {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .welcome-card a {
+      display: inline-block;
+    }
+
+    .welcome-card img {
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .welcome-card img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 12px 16px;
+      }
+
+      .welcome-card {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Sandipmal</h2>
+    <a href="index.html" class="btn-logout">Sign Out</a>
+  </header>
+
+  <main class="content">
+    <div class="welcome-card">
+      <h1>Good Morning!</h1>
+      <p>Welcome to your dashboard. You have successfully signed in.</p>
+      <a href="https://www.google.com/">
+        <img
+          src="http://allwishes.in/wp-content/uploads/2016/09/Good-Morning-Animated-GIF-Wallpaper-Cup-Plate-Coffee-Heart-By-Smoke.gif"
+          alt="Good Morning Coffee"
+          width="230"
+          height="320"
+        />
+      </a>
+    </div>
+  </main>
+</body>
 </html>
